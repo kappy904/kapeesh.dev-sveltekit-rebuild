@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;800&family=Petrona:wght@700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #6b6b6b;
+    background:  url('./assets/home/bg-new.png'), linear-gradient(#f6ffd1, #e1ffcb) fixed;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-size: contain;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.font-primary {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.font-secondary {
+    font-family: Petrona, serif;
+}
+
+@font-face {
+    font-family: icomoon;
+    src: url('/fonts/icomoon.woff?3yvz2y') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^='icon-'], [class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: icomoon !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bullhorn::before {
+    content: '\e91a';
+}
+
+.icon-terminal::before {
+    content: '\ea81';
+}
+
+.icon-mail4::before {
+    content: '\ea86';
+}
+
+.icon-instagram::before {
+    content: '\ea92';
+}
+
+.icon-steam2::before {
+    content: '\eaad';
+}
+
+.icon-github::before {
+    content: '\eab0';
+}
+
+.icon-soundcloud::before {
+    content: '\eac3';
+}
+
+.icon-reddit::before {
+    content: '\eac6';
+}
+
+.icon-linkedin::before {
+    content: '\eac9';
+}
+
+.icon-stackoverflow::before {
+    content: '\ead0';
+}
+
+.text-white {
+    color: #fff;
+}
+
+a {
+    color: theme('colors.purple');
+    text-decoration-color: #6b6b6b;
+    text-decoration-color: #6b6b6b;
+    background: linear-gradient(130deg, theme('colors.purple') 30%, theme('colors.blue'));
+    background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+.flex > a {
+    -webkit-text-fill-color: initial;
+}
+a:hover {
+    background-position: 0 100%;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 10%);
+    background: linear-gradient(#00b4f26e, #fff);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(#00b4f26e, #fff);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#00b4f26e, #fff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.6, theme('colors.green')));
+}
+
+/* home */
+.circle {
+    border: 3px solid theme('colors.blue');
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    flex: none;
+    opacity: 0;
+}
+
+.circle svg {
+    transform-origin: center center;
+    transition: transform 0.2s linear;
+}
+
+@media screen and (max-width: 1024px) {
+    .circle {
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        margin: 4em 12px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .circle {
+        margin: 0;
+    }
+}
+
+.circle:hover {
+    border: 3px solid theme('colors.purple');
+    transition: 0.2s linear all;
+    background: linear-gradient(70deg, theme('colors.blue') 35%, theme('colors.blue') 20%, theme('colors.purple'));
+}
+
+.circle:hover svg {
+    transform: scale(1.1);
+}
+
+.circle:hover svg path {
+    fill: #fff;
+}
+
+.circle:hover h2 {
+    color: #fff;
+}
+
+.circle:hover h5 {
+    color: theme('colors.purple');
+}
+
+.circle-a {
+    background: theme('colors.blue');
+    width: 431px;
+    height: 431px;
+    transition: 0.2s linear all;
+    top: 80px;
+    animation: fade-in-custom 1s;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1023px) {
+    .circle-a {
+        width: 321px;
+        height: 321px;
+        margin: 2em auto 0;
+    }
+
+    .circle-a svg {
+        margin-top: -2em;
+        width: 120px;
+    }
+
+    .circle-a::before {
+        display: none;
+    }
+}
+
+.circle-a:hover {
+    transition: 0.2s linear all;
+    border-color: theme('colors.blue') !important;
+    background: transparent !important;
+}
+
+.circle-a:hover svg path {
+    fill: url('#portfolio-a');
+}
+
+.circle-a:hover h2 {
+    transition: 0.2s linear all;
+    color: theme('colors.blue');
+}
+
+.circle-a::before {
+    opacity: 1 !important;
+    content: '';
+    position: absolute;
+    width: 501px;
+    height: 501px;
+    left: -38px;
+    top: -41px;
+    background-size: cover;
+    background-image: url('./assets/home/home-circle-a.png');
+    animation: rotateIn 1s ease-in-out, rotate 500s infinite 1s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+.circle-a::after {
+    content: '';
+    position: absolute;
+    background: theme('colors.blue');
+    height: 3px;
+    transform: rotate(-145deg);
+    transform-origin: center center;
+    opacity: 0;
+    left: auto;
+    top: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .circle-a::after {
+        width: 60px;
+        right: 17px;
+        bottom: 33px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .circle-a::after {
+        width: 105px;
+        right: -38px;
+        bottom: 33px;
+    }
+}
+
+.circle-b {
+    width: 320px;
+    height: 320px;
+    top: 60px;
+    left: -120px;
+    animation: fade-in-custom 1s;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+    .circle-b {
+        width: 221px;
+        height: 221px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .circle-b svg {
+        width: 120px;
+    }
+}
+
+.circle-b::after {
+    left: auto;
+    width: 139px;
+    right: -104px;
+    bottom: 30px;
+    transform: rotate(35deg);
+}
+
+@media screen and (min-width: 1024px) {
+    .circle-b::after {
+        left: auto;
+        width: 131px;
+        right: -95px;
+        bottom: 30px;
+        transform: rotate(35deg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .circle-b::after {
+        left: auto;
+        width: 131px;
+        right: -92px;
+        bottom: 24px;
+        transform: rotate(35deg);
+    }
+}
+
+.circle-c {
+    width: 250px;
+    height: 250px;
+    top: 48px;
+    left: -70px;
+    animation: fade-in-custom 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+    .circle-c {
+        width: 221px;
+        height: 221px;
+        margin-right: auto;
+        margin-top: -1.5em;
+        margin-left: 10px;
+    }
+
+    .circle-c svg {
+        width: 120px;
+    }
+}
+
+.circle-c:hover::before {
+    transform: scale(1) rotate(-13deg);
+}
+
+.circle-c::after {
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1024px) {
+    .circle-c::after {
+        width: 90px;
+        left: auto;
+        right: -39px;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .circle-c::after {
+        width: 93px;
+        left: auto;
+        right: -28px;
+        top: -14px;
+    }
+}
+
+.circle-d {
+    width: 360px;
+    height: 360px;
+    top: 20px;
+    left: 80px;
+    animation: fade-in-custom 1s;
+    animation-delay: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+    .circle-d {
+        width: 221px;
+        height: 221px;
+        margin-left: auto;
+        margin-top: -1.5em;
+        margin-right: 10px;
+    }
+
+    .circle-d svg {
+        width: 120px;
+    }
+}
+
+.circle-d::after {
+    transform: rotate(-215deg);
+    left: auto;
+    top: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .circle-d::after {
+        width: 70px;
+        right: -59px;
+        bottom: auto;
+        top: 110px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .circle-d::after {
+        width: 174px;
+        right: -160px;
+        bottom: 33px;
+    }
+}
+
+.circle-e {
+    width: 260px;
+    height: 260px;
+    top: -46px;
+    right: -73px;
+    animation: fade-in-custom 1s;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+    .circle-e {
+        width: 221px;
+        height: 221px;
+        margin-right: auto;
+        margin-top: -1.5em;
+        margin-left: 10px;
+    }
+
+    .circle-e svg {
+        width: 120px;
+    }
+}
+
+.text-6xl {
+    font-size: 5rem;
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(95deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(195deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(195deg);
+    }
+
+    100% {
+        transform: rotate(1195deg);
+    }
+}
+
+@keyframes fade-slow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-custom {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+}
+
+li {
+    list-style: disc;
+}
+
+.modal-overlay {
+    background:  url('./assets/home/bg-new.png') #fff fixed;
+}
+
+.modal .animated-header {
+    position: absolute;
+    animation: blurCustom 35s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes blurCustom {
+    0% {
+        filter: blur(15px);
+        transform: translate(-1840px, 0);
+    }
+
+    50% {
+        filter: blur(8px);
+    }
+
+    100% {
+        filter: blur(15px);
+        transform: translate(0, 0);
+    }
+}
