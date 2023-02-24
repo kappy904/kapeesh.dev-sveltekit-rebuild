@@ -114,8 +114,8 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-.flex > a {
-    -webkit-text-fill-color: initial;
+.flex > a, .logo * {
+    -webkit-text-fill-color: initial !important;
 }
 a:hover {
     background-position: 0 100%;
@@ -138,19 +138,19 @@ strong {
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgb(0 0 0 / 10%);
-    background: linear-gradient(#00b4f26e, #fff);
+    background:#000;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: linear-gradient(#00b4f26e, #fff);
+    background:#000;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(#00b4f26e, #fff);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.6, theme('colors.green')));
+    background: #000;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.6, theme('colors.blue')));
 }
 
 /* home */
