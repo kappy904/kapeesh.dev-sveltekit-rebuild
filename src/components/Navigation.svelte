@@ -3,9 +3,10 @@
   const showNav = (): boolean => {
     return isActive = !isActive;
   };
+
 </script>
 
-<a href='/' on:click={showNav} >
+<a href='/' on:click={showNav}>
   <div class='logo fixed font-secondary flex items-center pt-6 pl-4 cursor-pointer z-10 outline-none'>
     <i class='bg-blue text-4xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block'>K</i><span
     class='text-blue text-2xl tracking-tight'>apeesh</span>

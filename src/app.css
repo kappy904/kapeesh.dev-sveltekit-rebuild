@@ -522,7 +522,7 @@ strong {
 }
 
 li {
-    list-style: disc;
+    list-style: none;
 }
 
 .modal-overlay {

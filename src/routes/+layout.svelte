@@ -1,6 +1,7 @@
 <script>
-  import "../app.css";
+  import '../app.css';
   import Navigation from '../components/Navigation.svelte';
+
 </script>
-<Navigation/>
+<Navigation />
 <slot />
