@@ -549,3 +549,24 @@ li {
         transform: translate(0, 0);
     }
 }
+
+.hobbiesWrapper > div:nth-child(even) {
+    flex-direction: row-reverse !important;
+}
+
+@media screen and (max-width: 768px) {
+    .hobbiesWrapper > div:nth-child(even) {
+        flex-direction: column !important;
+    }
+}
+
+.hobbiesWrapper > div:nth-child(even) img {
+    margin-right: 0 !important;
+    margin-left: 9rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .hobbiesWrapper > div:nth-child(even) img {
+        margin-left: 0 !important;
+    }
+}
