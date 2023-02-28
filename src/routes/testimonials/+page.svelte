@@ -1,4 +1,5 @@
 <script>
+  import { marked } from 'marked';
   import Header from '../../components/Header.svelte';
   import Testimonial from '../../components/Testimonial.svelte';
 
@@ -16,6 +17,7 @@
   <svelte:fragment slot='pageTitle'>Testimonials</svelte:fragment>
   <svelte:fragment slot='subtitle'>Learning Together</svelte:fragment>
 </Header>
+
 {#each testimonials as testimonial}
   <Testimonial>
     <svelte:fragment slot='testimonialImage'>
@@ -26,8 +28,7 @@
     <svelte:fragment slot='testimonialTitle'>{testimonial?.fields.title}</svelte:fragment>
     <svelte:fragment slot='testimonialBlurb'>{testimonial?.fields.blurb}</svelte:fragment>
     <svelte:fragment slot='testimonialLinks'>
-      <a class='font-bold font-primary pr-8' target='_blank' rel='noreferrer'
-         href={testimonial?.fields.link}>Check out {testimonial?.fields.name}'s profile</a>
+      {@html marked.parse(testimonial?.fields.link)}
     </svelte:fragment>
   </Testimonial>
 {/each}
@@ -47,8 +48,7 @@
     <svelte:fragment slot='testimonialTitle'>{mentee?.fields.title}</svelte:fragment>
     <svelte:fragment slot='testimonialBlurb'>{mentee?.fields.blurb}</svelte:fragment>
     <svelte:fragment slot='testimonialLinks'>
-      <a class='font-bold font-primary pr-8' target='_blank' rel='noreferrer'
-         href={mentee?.fields.link}>Check out {mentee?.fields.name}'s profile</a>
+      {@html marked.parse(mentee?.fields.link)}
     </svelte:fragment>
   </Testimonial>
 {/each}

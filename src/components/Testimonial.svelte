@@ -21,7 +21,7 @@
         <slot name='testimonialBlurb' />
       {/if}
     </p>
-    <div class='flex flex-row mt-6'>
+    <div class="flex flex-row mt-6 font-bold font-primary pr-8">
       {#if $$slots.testimonialLinks}
         <slot name='testimonialLinks' />
       {/if}
