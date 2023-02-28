@@ -1,4 +1,4 @@
-<div class='flex mb-10 md:mb-40 items-center flex-col md:flex-row'>
+<div class='testimonial container m-auto flex mb-10 md:mb-40 items-center flex-col md:flex-row px-3 md:p-0'>
   <picture
     class='flex-shrink-0 relative block w-2/5 md:w-1/4 relative my-3 md:mr-20 md:w-1/6 pointer-events-none select-none'>
     {#if $$slots.testimonialImage}

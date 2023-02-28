@@ -1,6 +1,6 @@
 <script>
   import Header from '../../components/Header.svelte';
-  import TestimonialLeft from '../../components/TestimonialLeft.svelte';
+  import Testimonial from '../../components/Testimonial.svelte';
   import pp from '$lib/images/cv/cv-pp.webp';
   import ppFallback from '$lib/images/cv/cv-pp.jpg';
   import lobster from '$lib/images/cv/cv-lobster.webp';
@@ -198,8 +198,7 @@
 </div>
 </div>
 
-<div class="px-3 container content-center m-auto">
-<TestimonialLeft>
+<Testimonial>
   <svelte:fragment slot='testimonialImage'>
     <source type='image/webp' srcset={pp}>
     <img class='rounded-full' alt='pp' src={ppFallback}>
@@ -222,9 +221,9 @@
        href='https://passionatepeople.io/'>Check out PassionatePeople</a>
 
   </svelte:fragment>
-</TestimonialLeft>
+</Testimonial>
 
-<TestimonialLeft>
+<Testimonial>
   <svelte:fragment slot='testimonialImage'>
     <source type='image/webp' srcset={lobster}>
     <img class='rounded-full' alt='pp' src={lobsterFallback}>
@@ -245,9 +244,9 @@
        href='https://lobsterink.com/'>Check out LobsterInk</a>
 
   </svelte:fragment>
-</TestimonialLeft>
+</Testimonial>
 
-<TestimonialLeft>
+<Testimonial>
   <svelte:fragment slot='testimonialImage'>
     <source type='image/webp' srcset={responsive}>
     <img class='rounded-full' alt='pp' src={responsiveFallback}>
@@ -264,8 +263,7 @@
        href='https://lobsterink.com/'>Check out LobsterInk</a>
 
   </svelte:fragment>
-</TestimonialLeft>
-</div>
+</Testimonial>
 
 <div class='relative overflow-hidden mb-6 md:mb-10'>
   <div>

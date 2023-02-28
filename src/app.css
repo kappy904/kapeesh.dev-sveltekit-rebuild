@@ -570,3 +570,19 @@ li {
         margin-left: 0 !important;
     }
 }
+
+.testimonial:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.testimonial:nth-child(even) .tracking-wider {
+    padding-right: 2em;
+}
+@media screen and (max-width: 768px) {
+    .testimonial:nth-child(even) {
+        flex-direction: column;
+    }
+    .testimonial .tracking-wider {
+        padding-right: 2em;
+    }
+}
