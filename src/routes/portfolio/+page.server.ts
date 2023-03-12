@@ -15,8 +15,8 @@ export async function load() {
       clientLogos,
     };
   }
+
   return {
     status: 404
   };
-
 }

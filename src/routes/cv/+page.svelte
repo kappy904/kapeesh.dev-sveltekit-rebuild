@@ -276,22 +276,22 @@
 
 <div class='px-3 m-auto container content-center'>
   <ul>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>HTML5, CSS3</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Jade/Pug, HAML</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>SASS, SCSS, LESS</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>JavaScript</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>React 16+, Angular 6+, jQuery</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>BEM, Atomic SCSS, Material, FxLayout</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>GSAP.js animation library</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Bootstrap, Foundation</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Drupal 7/8</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>MySQL, MariaDB</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>NPM, Gulp, Grunt, Webpack</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Azure DevOps, Pantheon, Circle CI</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>JIRA, Resource Guru, Asana</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Bitbucket, Github</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Linux Arch, Ubuntu, OSX, Windows</span>
-    <span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Adobe creative cloud (PS, BR, LR)</span>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>HTML5, CSS3</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Jade/Pug, HAML</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>SASS, SCSS, LESS</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>JavaScript</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>React 16+, Angular 6+, jQuery</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>BEM, Atomic SCSS, Material, FxLayout</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>GSAP.js animation library</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Bootstrap, Foundation</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Drupal 7/8</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>MySQL, MariaDB</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>NPM, Gulp, Grunt, Webpack</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Azure DevOps, Pantheon, Circle CI</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>JIRA, Resource Guru, Asana</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Bitbucket, Github</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Linux Arch, Ubuntu, OSX, Windows</li>
+    <li class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Adobe creative cloud (PS, BR, LR)</li>
   </ul>
 </div>
 
@@ -314,9 +314,9 @@
         <ul>
           <li>Role: Front-end HTML5 and Css3 animations</li>
           <li>Award Entry:
-            http://hellojudge.passionfordigital.biz/hungry-lion-bigger-burger-banner/
+            https://hellojudge.passionfordigital.biz/hungry-lion-bigger-burger-banner/
           </li>
-          <li>Case Study: http://www.gottaquirk.com/2014/07/10/the-hungry-lion-bigger-burger-banner/</li>
+          <li>Case Study: https://www.gottaquirk.com/2014/07/10/the-hungry-lion-bigger-burger-banner/</li>
         </ul>
       </div>
     </div>
@@ -334,11 +334,11 @@
           <li>The Loerie Awards Company (September 2014)</li>
           <li>Role: Front-end HTML5 and Css3 animations
           </li>
-          <li>Award Entry <a href='http://hellojudge.passionfordigital.biz/hungry-lion-bigger-burger-banner/'>here</a>
+          <li>Award Entry <a href='https://hellojudge.passionfordigital.biz/hungry-lion-bigger-burger-banner/'>here</a>
           </li>
-          <li>Case Study <a href='http://www.gottaquirk.com/2014/07/10/the-hungry-lion-bigger-burger-banner/'>here</a>
+          <li>Case Study <a href='https://www.gottaquirk.com/2014/07/10/the-hungry-lion-bigger-burger-banner/'>here</a>
           </li>
-          <li>Finalists <a href='http://finalists.loeries.com/finalists.aspx?link=awards_finalists'>here</a>
+          <li>Finalists <a href='https://finalists.loeries.com/finalists.aspx?link=awards_finalists'>here</a>
           </li>
         </ul>
       </div>
@@ -358,7 +358,7 @@
           <li>Role: Front-end Engineering</li>
           <li>The Hungry Lion Lucky Bucket/</li>
           <li>The Hungry Lion Lucky Bucket</li>
-          <li>Results <a href='http://www.marklives.com/2014/11/assegai-awards-2014-winners/?category=media#.VFyXjvm
+          <li>Results <a href='https://www.marklives.com/2014/11/assegai-awards-2014-winners/?category=media#.VFyXjvm
 						UdkI'>page</a></li>
         </ul>
       </div>
@@ -377,7 +377,7 @@
           <li>IAB SA Bookmark Awards (January 2016)</li>
           <li>Savanna Premium Cider :: Global Website</li>
           <li>Role: Part of the Front-End Development Team + Animations</li>
-          <li>GSAP JavaScript animations for Bottle <a href='http://savannacider.com/drylights/new-bottle'>showcase</a>
+          <li>GSAP JavaScript animations for Bottle <a href='https://savannacider.com/drylights/new-bottle'>showcase</a>
           </li>
         </ul>
       </div>
@@ -396,14 +396,13 @@
           <li>IAB BOOKMARKS (January 2015)</li>
           <li>Role: Front-End engineer</li>
           <li>Role: Part of the Front-End Development Team + Animations</li>
-          <li>Announcement <a href='http://iabsa.net/news/iab-bookmarks-awards-finalists-announced/'>here</a>
+          <li>Announcement <a href='https://iabsa.net/news/iab-bookmarks-awards-finalists-announced/'>here</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
 
 <style lang='scss'>
 

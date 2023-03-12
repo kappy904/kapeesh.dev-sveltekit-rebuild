@@ -1,10 +1,11 @@
 <script lang='ts'>
+  import type { PortfolioData } from '../../types/Portfolio.types';
   import Header from '../../components/Header.svelte';
   import Portfolio from '../../components/Portfolio.svelte';
   import ClientLogos from '../../components/ClientLogos.svelte';
 
   export let data;
-  let { portfolios, clientLogos } = data;
+  let { portfolios , clientLogos }: PortfolioData = data || {};
 </script>
 
 <svelte:head>
@@ -39,8 +40,7 @@
 
 <div class='clientWrapper relative flex flex-wrap justify-center w-16 h-16 rounded-full p-2 relative bg-cover-wrapper mb-4'>
   {#each clientLogos?.[0]?.fields?.list as logo}
-    <ClientLogos size={logo.metadata?.tags[0]?.sys.id}
-                 imageUrl={logo.fields.file.url} />
+    <ClientLogos size={logo.metadata?.tags[0]?.sys.id} imageUrl={logo.fields.file.url} />
   {/each}
 </div>
 

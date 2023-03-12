@@ -13,7 +13,6 @@
   <svelte:fragment slot='subtitle'>Learning through connecting</svelte:fragment>
 </Header>
 
-
 <div class='flex container content-center flex flex-col md:flex-row justify-evenly'>
   <div
     class='gradient flex text-center pl-3 mx-auto md:pl-0 justify-center items-center rounded-full block'
@@ -42,7 +41,7 @@
     <div class='flex flex-col md:mr-24'>
       <div class='flex flex-row items-center mb-10'>
         <a href='https://github.com/kappy904' class='cursor-pointer'>
-          <i class='icon-github mr-6 text-3xl md:text-6xl' />
+          <i class='icon-github mr-6 text-3xl md:text-6xl'></i>
         </a>
         <a
           href='https://github.com/kappy904'
@@ -53,7 +52,7 @@
       </div>
       <div class='flex flex-row items-center mb-10'>
         <a href='https://www.linkedin.com/in/kapeesh-m-53323913/'>
-          <i class='icon-linkedin mr-6 text-3xl md:text-6xl' />
+          <i class='icon-linkedin mr-6 text-3xl md:text-6xl'></i>
         </a>
         <a
           href='https://www.linkedin.com/in/kapeesh-m-53323913/'
@@ -64,7 +63,7 @@
       </div>
       <div class='flex flex-row items-center mb-10'>
         <a href='https://www.instagram.com/kapeeshkappykap/'>
-          <i class='icon-instagram mr-6 text-3xl md:text-6xl' />
+          <i class='icon-instagram mr-6 text-3xl md:text-6xl'></i>
         </a>
         <a
           href='https://www.instagram.com/kapeeshkappykap/'
@@ -77,7 +76,7 @@
     <div class='flex flex-col'>
       <div class='flex flex-row items-center mb-10'>
         <a href='https://stackoverflow.com/users/5846771/kapeesh-manilal'>
-          <i class='icon-stackoverflow mr-6 text-3xl md:text-6xl' />
+          <i class='icon-stackoverflow mr-6 text-3xl md:text-6xl'></i>
         </a>
         <a
           href='https://stackoverflow.com/users/5846771/kapeesh-manilal'
@@ -88,7 +87,7 @@
       </div>
       <div class='flex flex-row items-center mb-10'>
         <a href='https://steamcommunity.com/profiles/76561198041254623/'>
-          <i class='icon-steam2 mr-6 text-3xl md:text-6xl' />
+          <i class='icon-steam2 mr-6 text-3xl md:text-6xl'></i>
         </a>
         <a
           href='https://steamcommunity.com/profiles/76561198041254623/'
@@ -99,7 +98,7 @@
       </div>
       <div class='flex flex-row items-center mb-10'>
         <a href='https://codepen.io/KapeeshKappyKap'>
-          <i class='icon-terminal mr-6 text-3xl md:text-6xl' />
+          <i class='icon-terminal mr-6 text-3xl md:text-6xl'></i>
         </a>
         <a
           href='https://codepen.io/KapeeshKappyKap'
@@ -113,7 +112,6 @@
 </div>
 
 <style lang='scss'>
-
     .gradient {
         background: linear-gradient(130deg, theme('colors.purple') 30%, theme('colors.blue'));
         width: 300px;
@@ -127,6 +125,4 @@
         -webkit-text-fill-color: white;
         text-fill-color: white;
     }
-
-
 </style>

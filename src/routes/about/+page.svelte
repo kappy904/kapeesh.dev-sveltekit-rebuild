@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
   import Header from '../../components/Header.svelte';
   import Youtube from '../../components/Youtube.svelte';
   import Hobby from '../../components/Hobby.svelte';
+  import type { AboutData } from '../../types/About.types';
 
   export let data;
-  const { youtube, hobby, hobbies } = data;
+  const { youtube, hobby, hobbies }: AboutData = data || {};
 </script>
 
 <svelte:head>

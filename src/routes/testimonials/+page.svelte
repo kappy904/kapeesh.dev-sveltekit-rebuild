@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
   import { marked } from 'marked';
   import Header from '../../components/Header.svelte';
   import Testimonial from '../../components/Testimonial.svelte';
+  import type { TestimonialData } from '../../types/Testimonials.types';
 
   export let data;
-  const { testimonials, mentees } = data;
+  const { testimonials, mentees }: TestimonialData = data || {};
 </script>
 
 <svelte:head>
@@ -21,8 +22,8 @@
 {#each testimonials as testimonial}
   <Testimonial>
     <svelte:fragment slot='testimonialImage'>
-      <source type='image/webp' srcset={testimonial?.fields.image?.fields.file.url}>
-      <img class='rounded-full' alt='testimonial image' src={testimonial?.fields.image?.fields.file.url}>
+      <source type='image/webp' srcset={testimonial?.fields?.image.fields.file.url}>
+      <img class='rounded-full' alt={testimonial?.fields.name} src={testimonial?.fields?.image.fields.file.url}>
     </svelte:fragment>
     <svelte:fragment slot='testimonialName'>{testimonial?.fields.name}</svelte:fragment>
     <svelte:fragment slot='testimonialTitle'>{testimonial?.fields.title}</svelte:fragment>
@@ -42,9 +43,9 @@
   <Testimonial>
     <svelte:fragment slot='testimonialImage'>
       <source type='image/webp' srcset={mentee?.fields.image?.fields.file.url}>
-      <img class='rounded-full' alt='testimonial image' src={mentee?.fields.image?.fields.file.url}>
+      <img class='rounded-full' alt={mentee?.fields.name} src={mentee?.fields.image?.fields.file.url}>
     </svelte:fragment>
-    <svelte:fragment slot='testimonialName'> {mentee?.fields.name}</svelte:fragment>
+    <svelte:fragment slot='testimonialName'>{mentee?.fields.name}</svelte:fragment>
     <svelte:fragment slot='testimonialTitle'>{mentee?.fields.title}</svelte:fragment>
     <svelte:fragment slot='testimonialBlurb'>{mentee?.fields.blurb}</svelte:fragment>
     <svelte:fragment slot='testimonialLinks'>

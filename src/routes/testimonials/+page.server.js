@@ -13,9 +13,9 @@ export async function load() {
         mentees,
     };
   }
+
   return {
     status: 404
   };
-
 }
 
